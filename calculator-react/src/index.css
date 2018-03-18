@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.calculator-root {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.calculator-root button {
+  border: 1px solid #424242;
+}
+
+.calculator-root .screen {
+  align-items: center;
+  background-color: #282828;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 50px;
+  height: 25%;
+}
+
+
+.calculator-root .buttons {
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+}
+
+.calculator-root .buttons button {
+  font-size: 20px;
+  width: 25%;
+}
+
+.calculator-root .buttons button.three-quarter {
+  width: 75%;
+}
+
+.calculator-root .buttons button.orange {
+  background-color: #FE7138;
+  color: #fff;
+}
