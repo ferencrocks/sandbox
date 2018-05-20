@@ -51,5 +51,5 @@ isStraightFlush : Deck -> Bool
 isStraightFlush deck =
   groupBySuit deck
     -- there are at least five consecutive ranks of the same suit
-    |> List.map (\deck -> countMaxConsecutiveRanks deck >= 5)
-    |> List.any (\res -> res == True)
+    |> List.map countMaxConsecutiveRanks
+    |> List.any (\cnt -> cnt >= 5)
